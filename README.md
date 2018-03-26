@@ -8,6 +8,9 @@ Note: These scripts have been executed locally
 - the first script 1_RetrievingTweets_globalgoals.py extracts the tweets and saves it to a csv file locally
 - all the other following scripts use this csv file (locally)
 
+VADER Sentiment Analysis has been used
+Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
+
 
 Packages necessary:
 tweepy
@@ -21,6 +24,3 @@ prettytable
 unidecode
 vaderSentiment
 Counter
-
-VADER Sentiment Analysis has been used
-Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
