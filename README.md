@@ -5,7 +5,7 @@ scripts used for the project in 'The social web' by group 8 at the VU Amsterdam
 These scripts have been executed in Python 2.7
 
 Note: These scripts have been executed locally
-- the first script (1_RetrievingTweets_globalgoals.py extracts the tweets and saves it to a csv file locally
+- the first script 1_RetrievingTweets_globalgoals.py extracts the tweets and saves it to a csv file locally
 - all the other following scripts use this csv file (locally)
 
 
