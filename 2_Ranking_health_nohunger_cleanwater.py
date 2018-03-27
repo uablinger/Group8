@@ -16,7 +16,7 @@ health_key = ["health", "wellbeing","goal3", "sdg3"]
 cleanwater_key = ["cleanwater", "goal6","cleandrinkingwater", "worldwaterday", "sdg6", "worldwaterday", "sanitation"]
 nohunger_key = ["nohunger","goal2","nutrition", "sdg2","zerohunger"]
     
-# test area starts here # search for string in column "text" using contains function. join keywords with regex OR | using join()
+# search for string in column "text" using contains function. join keywords with regex OR | using join()
 #case=FALSE to include also capital letters
 data_file["health"] = data_file["text"].str.contains("|".join(health_key),case=False)
 data_file["cleanwater"] = data_file["text"].str.contains("|".join(cleanwater_key),case=False)
