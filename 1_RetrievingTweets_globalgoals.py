@@ -18,11 +18,11 @@ fieldnames = ['datetime', 'text', 'user','retweets','likes','verified']
 csvWriter = csv.writer(csvFile)
 csvWriter.writerow(fieldnames)
 
-#script now also includes the user! but not a seperate column for hashtags
+#which tweetobjects? https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object
 index=0
-#the last ten days in since 
+#the last ten days
 for tweet in tweepy.Cursor(api.search,q="globalgoals",count=100,
-                           lang="en", since="2018-03-01").items():
+                           lang="en", since="YYYY-MM-DD").items():
     print(tweet.created_at, tweet.text,tweet.user.name, tweet.retweet_count, tweet.favorite_count,tweet.user.verified, tweet.user.location)
     print(index)
     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'),tweet.user.name.encode('utf-8'), tweet.retweet_count,tweet.favorite_count,tweet.user.verified, tweet.user.location.encode('utf-8')])
