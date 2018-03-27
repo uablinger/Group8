@@ -10,7 +10,7 @@ text_s = data_file['text']
 
 text_s = text_s.str.decode('utf8')
 text_s = text_s.apply(unidecode)
-#old text_regex = re.compile(r'[^a-zA-Z\s]')
+#text regex
 text_regex = re.compile('(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)')
 text_s = text_s.str.replace(text_regex, " ")
 #check text 
